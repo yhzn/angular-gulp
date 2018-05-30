@@ -1,0 +1,6 @@
+<div class="position-info">
+    <p><span ng-bind="pos.name"></span><span class="red" ng-bind="pos.salaryName">3k-5k</span>
+    <p><span ng-bind="pos.cityName"></span><span ng-bind="pos.experience"></span><span ng-bind="pos.education"></span></p>
+    <p ng-bind="pos.benefit"></p>
+    <span is-show="isLogin" ng-bind="'星'" ng-click="favorite()" class="{{login?'login':''}}"></span>
+</div>

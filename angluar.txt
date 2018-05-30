@@ -1,0 +1,79 @@
+﻿
+#http://www.angularjs.cn/    
+ Angularjs中文社区
+
+
+Angular 调试工具：batarang
+ 主要功能：查看作用域、输出调试信息、性能监控
+
+第三方依赖管理工具bower
+ 常用命令：bower init /  bower install / bower uninstall
+ 配置文件：bowerrc(管理目录)、bower.json(配置依赖)
+
+ 安装 1.cnpm i -g bower
+      2.bower init
+      3.bower install --save angular
+ 创建 .bowerrc文件  null>.bowerrc
+
+ 单页面
+  定义：页面跳转无刷新
+  方法：利用路由控制 "页面" 跳转
+  优点：页面切换流畅、前后端分离
+
+自动化构建工具
+
+  自动化构建工具：gulp
+  优点 ：基于流、任务化
+  常用API：src/dest/watch/tast/pipe
+
+  安装gulp: npm i -g gulp
+            npm init(初始化文件)
+            cnpm i --save-dev gulp
+  安装gulp插件：
+      gulp-clean/gulp-concat/gulp-connect/gulp-cssmin/gulp-imagemin/gulp-less/gulp-load-plugins/gulp-uglify/open
+      
+路由 ui.router
+  ui.router: http://runjs.cn/code/74vszpdz
+  路由参数：http://runjs.cn/code/zey9cp7w
+  重要指令和服务：ui-sref、$state
+
+控制器与作用域总结
+
+职位模块-----控制器和作用域
+ 控制器：视图对应的业务逻辑、为数据模型添加行为和属性
+ 常用属性：$id/$parent(父作用域)/$root
+ 常用函数：$watch(监控$scope上的属性发生变化时调用函数)
+$on(接受事件)/$broadcast(向下广播)/$emit(向上广播)/$digest(双向数据绑定失效时使用)
+
+过滤器
+
+用来格式化或者过滤数据
+
+内置过滤器：currency\number\data\lowercase\uppercase\orderBy\limitTo
+自定义过滤器：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

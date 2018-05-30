@@ -1,0 +1,11 @@
+<div class="register">
+    <form action="">
+        <input ng-model="user.phone" type="text" placeholder="输入账号">
+        <input ng-model="user.password" type="password" placeholder="输入密码">
+        <input ng-model="user.code" type="text" placeholder="输入验证码">
+        <button class="{{time?'disable':''}}" ng-click="time?1===1:send();" ng-bind="time?time:'发送短信'"></button>
+
+        <button ui-sref="login">登陆</button>
+        <button ng-click="submit();">注册</button>
+    </form>
+</div>

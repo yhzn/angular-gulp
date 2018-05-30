@@ -1,0 +1,16 @@
+<div class="position-list">
+    <ul>
+        <!-- ui-sref 实现路由跳转 传参的方式-->
+
+        <li ui-sref="position({id:item.id})" ng-repeat="item in data | filterByObj:filterObj">
+            <div class="psl" ng-bind="item.id"></div>
+            <div class="msg">
+                <h1 ng-bind="item.job"></h1>
+                <p ng-bind="item.companyName+' ['+item.cityName+'] '+item.industryName"></p>
+                <p ng-bind="item.date"></p>
+                <!-- $event.stopPropagation() 阻止冒泡事件 -->
+                <span ng-if="isFavorite" ng-click="$event.stopPropagation();select(item)" class="{{item.select?'star-active':'star'}}">标记</span>
+            </div>
+        </li>
+    </ul>
+</div>

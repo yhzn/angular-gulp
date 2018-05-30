@@ -1,0 +1,43 @@
+@import 'template/index-head.less';
+@import 'template/detail-msg.less';
+@import 'template/detail-tab.less';
+
+html,body{
+
+  height:100%;
+  width:100%;
+}
+
+*{
+
+  margin:0;
+  padding:0;
+  list-style: none;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+
+@font-face {
+
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.clear{
+
+	zoom:1;
+}
+
+.clear.fix{
+	clear:both;
+	content:'.';
+	display:block;
+	width: 0;
+	height: 0;
+	visibility:hidden;
+}

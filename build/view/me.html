@@ -1,0 +1,13 @@
+<div class="me">
+    <div ng-if="name">
+    <span ng-bind="name"></span><br/>
+    <button ui-sref="post">投递</button><br/>
+    <button ui-sref="favorite">收藏</button><br/>
+    <button ng-click="logout();">退出登录</button>
+    </div>
+    <div ng-hide="name">
+        <button ui-sref="login">去登陆</button>
+
+    </div>
+    <div app-foot></div>
+</div>
